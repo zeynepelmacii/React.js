@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@300&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+  }
+ 
+  body {
+    background: linear-gradient(-45deg, #291e8a, #0c0647);
+    background-size: 400% 400%;
+    animation: gradient 4s linear infinite;
+    height: 100vh;
+  }
+
+  .title{
+    color: #ff842b;
+    padding-top: 3.5vw;
+    padding-bottom: 1vw;
+    padding-left: 1.5vw;
+    font-size: 2vw;
+    font-family: 'Unbounded';
+  }
+
+  .components{
+    display: flex;
+    flex-direction: row;
+  }
+
+
+  /*------------Form Component-----------------*/
+.Form{
+  margin-left: 1.6vw;
+  display: flex;
+  right: 0;
+  width: 90%;
+  height: 100vh;
+}
+
+.formContainer{
+  background-color: white;
+  width: 35%;
+  height: 75%;
+  border-radius: 3vw;
+  margin-top: 4vw;
+  margin-left: 20vw;
+  padding: 3vw;
+}
+  /*-------------Result Components----------------*/
+.resultContainer{
+  background-color: white;
+  width: 30%;
+  height: 55%;
+  border-radius: 3vw;
+  margin-top: 2vw;
+  margin-left: 3vw;
+  padding: 3vw;
+}
+
+.info{
+  margin-top: 3vw;
+  padding: 2vw;
+  border: 3px solid #ebebeb;
+  background-color: #f3f3f3;
+  border-radius: 1vw;
+}
+
+input{
+  font-size: 1.2vw;
+  width: 100%;
+  padding: 1vw;
+  border: 2px solid #ff842b;
+  background-color: #fcc8a2;
+  color: #ff842b;
+  border-radius: 1vw;
+  margin-bottom: 1vw;
+}
+
+p{
+  float: right;
+  color: #291e8a;
+  font-weight: bold;
+}
+
+::placeholder{
+  color: #fff;
+  opacity: 1;
+  transition: .8s;
+}
+
+input:hover::placeholder{
+  color: #ff842b;
+}
+
+button{
+  border: 2px solid #ff842b;
+  border-radius: 1vw;
+  margin-top: 3vw;
+  background-color: #fcc8a2;
+  color: #291e8a;
+  font-size: 1.2vw;
+  width: 100%;
+  padding: 1vw;
+  font-weight: bold;
+  transition: .5s;
+}
+
+button:hover{
+  border: 2px solid #fcc8a2;
+  background-color: #ff842b;
+  color: #f3f3f3;
+}
+
+
+  /*-------------Navbar Components----------------*/
+.navigation-bar{
+  width: 15%;
+  height: 100vh;
+}
+
+.contents{
+  display: flex;
+  flex-direction: column;
+  transform: translateY(30%);
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  background-color: #ff842b;
+  color: #fff;
+  margin-top: 3vw;
+  padding: 1vw;
+  font-size: 1.3vw;
+  text-align: center;
+  border-radius: 1vw;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  transition: .4s;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 20vw;
+  background-color: white;
+  color: #0c0647;
+  text-align: center;
+  border-radius: 6px;
+  padding: 1vw;
+  font-family: sans-serif;
+  line-height: 2vw;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+}
+
+.tooltip:nth-child(1):hover {
+  margin-bottom: 4vw;
+}
+
+.tooltip:nth-child(2):hover {
+  margin-bottom: 4vw;
+}
+
+.tooltip:nth-child(3):hover {
+  margin-top: 4vw;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/*-----------------------------*/
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+ 
+
